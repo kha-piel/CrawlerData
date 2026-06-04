@@ -1,0 +1,20 @@
+﻿product_name,category,price,rating,review_count,product_url
+Laptop Dell Inspiron 15,Laptop,12500000.0,4.5,125,https://example.com/dell-inspiron-15
+MacBook Air M1,Laptop,19990000.0,4.8,210,https://example.com/macbook-air-m1
+iPhone 13,Điện Thoại,,4.7,356,https://example.com/iphone-13
+Samsung Galaxy A54,Điện Thoại,8490000.0,4.4,180,https://example.com/samsung-a54
+Tai nghe Sony WH-CH520,Phụ Kiện,1290000.0,4.6,96,https://example.com/sony-wh-ch520
+Chuột Logitech M331,Phụ Kiện,420000.0,4.3,72,https://example.com/logitech-m331
+Bàn phím cơ AKKO 3087,Phụ Kiện,,4.5,,https://example.com/akko-3087
+Màn hình LG 24MP400,Màn Hình,2990000.0,4.2,54,https://example.com/lg-24mp400
+Loa Bluetooth JBL Go 3,Âm Thanh,890000.0,4.1,65,https://example.com/jbl-go-3
+Máy in Canon LBP2900,Văn Phòng,3150000.0,4.0,41,https://example.com/canon-lbp2900
+Webcam Rapoo C260,Phụ Kiện,590000.0,,18,https://example.com/rapoo-c260
+Ổ cứng SSD Kingston 500GB,Lưu Trữ,1350000.0,4.7,134,https://example.com/ssd-kingston-500gb
+USB SanDisk 64GB,Lưu Trữ,,4.0,50,https://example.com/usb-sandisk-64gb
+Ghế công thái học Sihoo M57,Nội Thất,5990000.0,4.6,29,https://example.com/sihoo-m57
+Bàn làm việc gỗ MDF,Nội Thất,2150000.0,4.1,22,https://example.com/ban-mdf
+Laptop ASUS Vivobook 15,Laptop,14200000.0,4.4,145,https://example.com/asus-vivobook-15
+Router TP-Link Archer C64,Mạng,790000.0,4.3,64,https://example.com/tplink-c64
+Đồng hồ thông minh Amazfit Bip 5,Thiết Bị Đeo,1990000.0,4.5,88,https://example.com/amazfit-bip-5
+Pin dự phòng Anker 10000mAh,Phụ Kiện,690000.0,4.7,,https://example.com/anker-10000
