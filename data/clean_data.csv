@@ -1,20 +1,41 @@
 ﻿product_name,category,price,rating,review_count,product_url
-Laptop Dell Inspiron 15,Laptop,12500000.0,4.5,125,https://example.com/dell-inspiron-15
-MacBook Air M1,Laptop,19990000.0,4.8,210,https://example.com/macbook-air-m1
-iPhone 13,Điện Thoại,,4.7,356,https://example.com/iphone-13
-Samsung Galaxy A54,Điện Thoại,8490000.0,4.4,180,https://example.com/samsung-a54
-Tai nghe Sony WH-CH520,Phụ Kiện,1290000.0,4.6,96,https://example.com/sony-wh-ch520
-Chuột Logitech M331,Phụ Kiện,420000.0,4.3,72,https://example.com/logitech-m331
-Bàn phím cơ AKKO 3087,Phụ Kiện,,4.5,,https://example.com/akko-3087
-Màn hình LG 24MP400,Màn Hình,2990000.0,4.2,54,https://example.com/lg-24mp400
-Loa Bluetooth JBL Go 3,Âm Thanh,890000.0,4.1,65,https://example.com/jbl-go-3
-Máy in Canon LBP2900,Văn Phòng,3150000.0,4.0,41,https://example.com/canon-lbp2900
-Webcam Rapoo C260,Phụ Kiện,590000.0,,18,https://example.com/rapoo-c260
-Ổ cứng SSD Kingston 500GB,Lưu Trữ,1350000.0,4.7,134,https://example.com/ssd-kingston-500gb
-USB SanDisk 64GB,Lưu Trữ,,4.0,50,https://example.com/usb-sandisk-64gb
-Ghế công thái học Sihoo M57,Nội Thất,5990000.0,4.6,29,https://example.com/sihoo-m57
-Bàn làm việc gỗ MDF,Nội Thất,2150000.0,4.1,22,https://example.com/ban-mdf
-Laptop ASUS Vivobook 15,Laptop,14200000.0,4.4,145,https://example.com/asus-vivobook-15
-Router TP-Link Archer C64,Mạng,790000.0,4.3,64,https://example.com/tplink-c64
-Đồng hồ thông minh Amazfit Bip 5,Thiết Bị Đeo,1990000.0,4.5,88,https://example.com/amazfit-bip-5
-Pin dự phòng Anker 10000mAh,Phụ Kiện,690000.0,4.7,,https://example.com/anker-10000
+A Light in the Attic,Books,51.77,3.0,,https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+Tipping the Velvet,Books,53.74,1.0,,https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+Soumission,Books,50.1,1.0,,https://books.toscrape.com/catalogue/soumission_998/index.html
+Sharp Objects,Books,47.82,4.0,,https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+Sapiens: A Brief History of Humankind,Books,54.23,5.0,,https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+The Requiem Red,Books,22.65,1.0,,https://books.toscrape.com/catalogue/the-requiem-red_995/index.html
+The Dirty Little Secrets of Getting Your Dream Job,Books,33.34,4.0,,https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",Books,17.93,3.0,,https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,Books,22.6,4.0,,https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+The Black Maria,Books,52.15,1.0,,https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+"Starving Hearts (Triangular Trade Trilogy, #1)",Books,13.99,2.0,,https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html
+Shakespeare's Sonnets,Books,20.66,4.0,,https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html
+Set Me Free,Books,17.46,5.0,,https://books.toscrape.com/catalogue/set-me-free_988/index.html
+Scott Pilgrim's Precious Little Life (Scott Pilgrim #1),Books,52.29,5.0,,https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+Rip it Up and Start Again,Books,35.02,5.0,,https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html
+"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",Books,57.25,3.0,,https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html
+Olio,Books,23.88,1.0,,https://books.toscrape.com/catalogue/olio_984/index.html
+Mesaerion: The Best Science Fiction Stories 1800-1849,Books,37.59,1.0,,https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html
+Libertarianism for Beginners,Books,51.33,2.0,,https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html
+It's Only the Himalayas,Books,45.17,2.0,,https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+In Her Wake,Books,12.84,1.0,,https://books.toscrape.com/catalogue/in-her-wake_980/index.html
+How Music Works,Books,37.32,2.0,,https://books.toscrape.com/catalogue/how-music-works_979/index.html
+"Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",Books,30.52,3.0,,https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html
+Chase Me (Paris Nights #2),Books,25.27,5.0,,https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html
+Black Dust,Books,34.53,5.0,,https://books.toscrape.com/catalogue/black-dust_976/index.html
+Birdsong: A Story in Pictures,Books,54.64,3.0,,https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html
+America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana,Books,22.5,3.0,,https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html
+Aladdin and His Wonderful Lamp,Books,53.13,3.0,,https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html
+Worlds Elsewhere: Journeys Around Shakespeareâs Globe,Books,40.3,5.0,,https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html
+Wall and Piece,Books,44.18,4.0,,https://books.toscrape.com/catalogue/wall-and-piece_971/index.html
+The Four Agreements: A Practical Guide to Personal Freedom,Books,17.66,5.0,,https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html
+The Five Love Languages: How to Express Heartfelt Commitment to Your Mate,Books,31.05,3.0,,https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html
+The Elephant Tree,Books,23.82,5.0,,https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html
+The Bear and the Piano,Books,36.89,1.0,,https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html
+Sophie's World,Books,15.94,5.0,,https://books.toscrape.com/catalogue/sophies-world_966/index.html
+Penny Maybe,Books,33.29,3.0,,https://books.toscrape.com/catalogue/penny-maybe_965/index.html
+Maude (1883-1993):She Grew Up with the country,Books,18.02,2.0,,https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html
+"In a Dark, Dark Wood",Books,19.63,1.0,,https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html
+Behind Closed Doors,Books,52.22,4.0,,https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html
+You can't bury them all: Poems,Books,33.63,2.0,,https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html

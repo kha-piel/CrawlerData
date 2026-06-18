@@ -54,6 +54,16 @@ def reset_after_new_raw_data() -> None:
     st.session_state["cleaning_report"] = None
 
 
+def reset_all_data() -> None:
+    """Clear all session state data and delete saved CSV files to start fresh."""
+    for key in ["raw_df", "clean_df", "analysis", "cleaning_report"]:
+        st.session_state[key] = None
+    st.session_state["source_note"] = "Ứng dụng đã được làm mới, dữ liệu trống."
+    for path in [RAW_DATA_PATH, CLEAN_DATA_PATH, SUMMARY_REPORT_PATH]:
+        if path.exists():
+            path.unlink()
+
+
 def load_sample_data_to_raw() -> None:
     """Use offline sample data and save it as the current raw dataset."""
     sample_df = create_sample_dataframe()
@@ -67,7 +77,8 @@ def load_sample_data_to_raw() -> None:
 def crawl_data(target_url: str, max_pages: int) -> None:
     """Crawl public data. If the website fails, switch to sample data."""
     try:
-        raw_df = scrape_books(url=target_url, max_pages=max_pages)
+        with st.spinner("Đang cào dữ liệu từ trang web, vui lòng chờ..."):
+            raw_df = scrape_books(url=target_url, max_pages=max_pages)
         save_dataframe(raw_df, RAW_DATA_PATH)
         st.session_state["raw_df"] = raw_df
         st.session_state["source_note"] = (
@@ -231,6 +242,7 @@ def render_analysis() -> None:
             y="count",
             title="Số lượng sản phẩm theo danh mục",
         )
+        fig_category.update_xaxes(title_text="")
         st.plotly_chart(fig_category, use_container_width=True)
 
     average_by_category_df = analysis["average_price_by_category"]
@@ -241,6 +253,7 @@ def render_analysis() -> None:
             y="average_price",
             title="Giá trung bình theo danh mục",
         )
+        fig_average.update_xaxes(title_text="")
         st.plotly_chart(fig_average, use_container_width=True)
 
 
@@ -264,10 +277,11 @@ def main() -> None:
     default_url = st.sidebar.text_input("URL công khai", value=DEFAULT_BOOKS_URL)
     max_pages = st.sidebar.slider("Số trang cần crawl", min_value=1, max_value=3, value=2)
 
-    if st.sidebar.button("Crawl Data", use_container_width=True):
+    col1, col2 = st.sidebar.columns(2)
+    if col1.button("Crawl Data", use_container_width=True):
         crawl_data(default_url, max_pages)
 
-    if st.sidebar.button("Use Sample Data", use_container_width=True):
+    if col2.button("Sample Data", use_container_width=True):
         try:
             load_sample_data_to_raw()
             st.success("Đã nạp dữ liệu mẫu và lưu vào data/raw_data.csv.")
@@ -281,6 +295,11 @@ def main() -> None:
         analyze_current_data()
 
     render_download_buttons()
+
+    st.sidebar.markdown("---")
+    if st.sidebar.button("Làm mới ứng dụng", type="primary", use_container_width=True):
+        reset_all_data()
+        st.rerun()
 
     if st.session_state["source_note"]:
         st.info(st.session_state["source_note"])
@@ -316,7 +335,7 @@ def main() -> None:
 
     st.markdown("---")
     st.markdown(
-        "Nhóm thực hiện: Nhóm 3 | Môn học: Nhập môn Khoa học dữ liệu | Năm học: 2026"
+        "Nhóm thực hiện: Trần Đức Bá Linh và Nguyễn Phú Kha | Môn học: Python| Năm học: 2026"
     )
     st.markdown(
         f"Tài liệu tham khảo trong repo: "
