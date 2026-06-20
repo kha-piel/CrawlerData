@@ -9,7 +9,7 @@ importlib.reload(scraper_module)
 from analyzer import analyze_data, save_summary_report
 from cleaner import clean_dataframe
 from sample_data import create_sample_dataframe, save_sample_data
-from storage import CLEAN_DATA_PATH, RAW_DATA_PATH, SAMPLE_DATA_PATH, dataframe_to_csv_bytes, ensure_directories, load_dataframe, save_dataframe
+from storage import CLEAN_DATA_PATH, RAW_DATA_PATH, SAMPLE_DATA_PATH, SUMMARY_REPORT_PATH, dataframe_to_csv_bytes, ensure_directories, load_dataframe, save_dataframe
 
 
 DEFAULT_BOOKS_URL = scraper_module.DEFAULT_BOOKS_URL
