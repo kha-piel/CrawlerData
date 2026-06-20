@@ -2,7 +2,6 @@
 
 ## 1. Tổng quan ý tưởng project
 
-Đây là đồ án nhỏ dành cho sinh viên năm nhất ngành Công nghệ thông tin/Data Science. Project mô phỏng một quy trình cơ bản trong Khoa học dữ liệu:
 
 `Raw Data -> Clean Data -> Analysis -> Dashboard`
 
@@ -19,7 +18,7 @@ Project ưu tiên:
 - Code dễ đọc, có comment ngắn gọn.
 - Không dùng kỹ thuật quá phức tạp.
 - Không thu thập dữ liệu cá nhân.
-- Có thể demo offline ngay trong lớp học.
+
 
 ## 2. Cấu trúc thư mục
 
@@ -146,15 +145,7 @@ Dữ liệu mẫu nằm ở `data/sample_data.csv` với khoảng 20 dòng. Dữ
 - Rating ở dạng chuỗi như `4.5/5 sao`, `N/A`.
 - Một số dòng thiếu `price`, `rating`, `review_count`.
 - Có dữ liệu trùng lặp.
-
-## 9. Tài liệu đồ án bằng tiếng Việt
-
-Các nội dung phục vụ báo cáo, demo và thuyết trình đã được tách thành file riêng:
-
-- `docs/project_report_vi.md`: Nội dung báo cáo đồ án đầy đủ.
-- `docs/demo_script_vi.md`: Kịch bản demo và lời thoại ngắn gọn.
-- `docs/team_work_vi.md`: Phân chia công việc cho nhóm 3 người.
-- `docs/slides_outline_vi.md`: Đề xuất nội dung 12 slide thuyết trình.
+## 9 .
 
 ## 10. Ưu điểm, nhược điểm, rủi ro và cách khắc phục
 

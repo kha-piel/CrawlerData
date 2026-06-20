@@ -4,7 +4,7 @@ from storage import SUMMARY_REPORT_PATH, save_dataframe
 
 
 def safe_stat(series: pd.Series, function_name: str):
-    """Run a pandas statistic safely and return None if no data exists."""
+    """Thực thi một phép toán thống kê pandas một cách an toàn, trả về None nếu không có dữ liệu."""
     non_null_series = series.dropna()
     if non_null_series.empty:
         return None
@@ -12,7 +12,7 @@ def safe_stat(series: pd.Series, function_name: str):
 
 
 def analyze_data(df: pd.DataFrame) -> dict:
-    """Create summary numbers and chart-ready tables."""
+    """Tạo ra các chỉ số tổng quan và các bảng dữ liệu sẵn sàng để vẽ biểu đồ."""
     if df.empty:
         raise ValueError("Dữ liệu sạch đang rỗng, không thể phân tích.")
 
@@ -93,5 +93,5 @@ def analyze_data(df: pd.DataFrame) -> dict:
 
 
 def save_summary_report(summary_df: pd.DataFrame) -> None:
-    """Save the summary report to CSV."""
+    """Lưu báo cáo tổng quan vào tệp CSV."""
     save_dataframe(summary_df, SUMMARY_REPORT_PATH)

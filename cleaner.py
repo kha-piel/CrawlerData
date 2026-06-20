@@ -27,13 +27,13 @@ RATING_WORD_MAP = {
 
 
 def remove_accents(text: str) -> str:
-    """Remove accents to compare Vietnamese text more easily."""
+    """Loại bỏ dấu tiếng Việt để dễ dàng so sánh chuỗi văn bản."""
     normalized = unicodedata.normalize("NFD", text)
     return "".join(char for char in normalized if unicodedata.category(char) != "Mn")
 
 
 def normalize_text(value):
-    """Trim spaces and convert common missing markers to null."""
+    """Cắt khoảng trắng thừa và chuyển đổi các từ chỉ sự rỗng (missing) thành null."""
     if pd.isna(value):
         return pd.NA
 
@@ -46,7 +46,7 @@ def normalize_text(value):
 
 
 def normalize_name(value):
-    """Clean product names without changing the meaning too much."""
+    """Làm sạch tên sản phẩm mà không làm thay đổi quá nhiều ý nghĩa ban đầu."""
     text = normalize_text(value)
     if pd.isna(text):
         return pd.NA
@@ -54,7 +54,7 @@ def normalize_name(value):
 
 
 def normalize_category(value):
-    """Keep categories readable and consistent."""
+    """Đảm bảo danh mục dễ đọc và nhất quán (Viết hoa chữ cái đầu)."""
     text = normalize_text(value)
     if pd.isna(text):
         return pd.NA
@@ -62,7 +62,7 @@ def normalize_category(value):
 
 
 def parse_price(value):
-    """Convert text prices like 12.500.000đ or £51.77 into numbers."""
+    """Chuyển đổi giá trị tiền dạng chuỗi (vd: 12.500.000đ hoặc £51.77) thành số thực."""
     text = normalize_text(value)
     if pd.isna(text):
         return pd.NA
@@ -106,7 +106,7 @@ def parse_price(value):
 
 
 def parse_rating(value):
-    """Convert rating strings such as 4.5/5 sao or Three into numbers."""
+    """Chuyển đổi các chuỗi đánh giá (vd: 4.5/5 sao hoặc Three) thành số thực."""
     text = normalize_text(value)
     if pd.isna(text):
         return pd.NA
@@ -127,7 +127,7 @@ def parse_rating(value):
 
 
 def parse_review_count(value):
-    """Extract the number of reviews from free-text strings."""
+    """Trích xuất số lượng đánh giá từ các chuỗi văn bản tự do."""
     text = normalize_text(value)
     if pd.isna(text):
         return pd.NA
@@ -139,7 +139,7 @@ def parse_review_count(value):
 
 
 def clean_dataframe(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
-    """Apply basic data cleaning steps for first-year students."""
+    """Thực hiện các bước làm sạch dữ liệu cơ bản, phù hợp cho bài tập sinh viên năm nhất."""
     cleaned_df = df.copy()
     rows_before = len(cleaned_df)
 

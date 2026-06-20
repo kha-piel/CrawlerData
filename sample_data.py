@@ -4,7 +4,7 @@ from storage import SAMPLE_DATA_PATH, save_dataframe
 
 
 def create_sample_dataframe() -> pd.DataFrame:
-    """Create intentionally messy sample data for the cleaning demo."""
+    """Tạo dữ liệu mẫu cố ý chứa các lỗi để minh họa cho bước làm sạch (Clean Data)."""
     rows = [
         {
             "product_name": "  Laptop Dell Inspiron 15  ",
@@ -171,7 +171,7 @@ def create_sample_dataframe() -> pd.DataFrame:
 
 
 def save_sample_data() -> pd.DataFrame:
-    """Save sample data to CSV so the project can run offline."""
+    """Lưu dữ liệu mẫu vào CSV để dự án có thể chạy offline mà không cần cào mạng."""
     sample_df = create_sample_dataframe()
     save_dataframe(sample_df, SAMPLE_DATA_PATH)
     return sample_df
